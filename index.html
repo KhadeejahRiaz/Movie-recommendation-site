@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+ <header>
+    <nav>
+        <h1>MovieRecs</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Genres</a></li>
+
+        </ul>
+    
+     </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Welcome to MovieRecs</h2>
+        <p>Your go-to place for movie recommendations</p>
+    </section>
+
+
+    <section  class="about">
+        <h2>About Us</h2>
+        <p>MovieRecs is your personal movie assistant, helping you discover movies that match your taste. Whether you enjoy thrilling action, heartwarming dramas, or spine-chilling horrors, we’ve got you covered with expertly curated recommendations. Our goal is to make movie discovery easier and more enjoyable for you!</p>
+    </section>
+
+    <section class="genres">
+        <h2>Popular Genres</h2>
+        <div class="genre-cards">
+            <div class="genre-card">
+                <img src="images/ai-generated-8787304_1280.jpg" alt="Action">
+                <div class="genre-info">
+                    <h3>Action</h3>
+                    <p>Heart-pounding thrillers and explosive blockbusters that keep you on the edge of your seat.</p>
+                </div>
+            </div>
+            <div class="genre-card">
+                <img src="images/comedy.jpg" alt="Comedy">
+                <div class="genre-info">
+                    <h3>Comedy</h3>
+                    <p>Laugh-out-loud films that brighten your day with humor, wit, and a sense of fun.</p>
+                </div>
+            </div>
+            <div class="genre-card">
+                <img src="images/Spirited-Away-Dragon.jpg" alt="Drama">
+                <div class="genre-info">
+                    <h3>Drama</h3>
+                    <p>Engaging stories that dive deep into human emotions, exploring life's complex moments.</p>
+                </div>
+            </div>
+            <div class="genre-card">
+                <img src="images/horror.jpg" alt="Horror">
+                <div class="genre-info">
+                    <h3>Horror</h3>
+                    <p>Spine-chilling films that will make you jump out of your seat, packed with suspense and scares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies">
+        <h2>Featured Movies</h2>
+        <div class="movie-cards">
+            <div class="movie-card">
+                <img src="images/movie cards/inception.jpg" alt="">
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p class="description">A mind-bending thriller where dreams and reality blur. A team of thieves infiltrates dreams to plant an idea in the mind of a target.</p>
+                    <p><i class="fas fa-star"></i> 8.8</p>
+
+                    <button class="more-info">More Info</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/movie cards/darknight.jpg" alt="">
+                <div class="movie-info">
+                    <h3>The Dark Knight</h3>
+                    <p class="description">Batman faces off against the Joker in this epic action thriller. The Joker's chaotic nature challenges Batman's sense of justice.</p>
+                    <p><i class="fas fa-star"></i> 9.0</p>
+                    <button class="more-info">More Info</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/movie cards/interstelar.jpg" alt="">
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <p class="description">A team of explorers ventures into space to find a new home for humanity. A visually stunning film about love, sacrifice, and survival.</p>
+                    <p><i class="fas fa-star"></i> 8.6</p>
+                    <button class="more-info">More Info</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/movie cards/parasite.jfif" alt="Movie 4">
+                <div class="movie-info">
+                    <h3>Parasite</h3>
+                    <p class="description">A social thriller that dives into the life of two families from different classes, with unexpected twists that reveal the complexities of society.</p>
+                    <p><i class="fas fa-star"></i> 8.6</p>
+                    <button class="more-info">More Info</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/movie cards/shawshank.jpg" alt="Movie 5">
+                <div class="movie-info">
+                    <h3> Shawshank Redemption</h3>
+                    <p class="description">An inspiring story of hope set in a prison, where two men form a bond that helps them escape the confines of their reality.</p>
+                    <p><i class="fas fa-star"></i> 9.3</p>
+                    <button class="more-info">More Info</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/movie cards/godfather.jpg" alt="Movie 6">
+                <div class="movie-info">
+                    <h3>The Godfather</h3>
+                    <p class="description">A powerful family saga that explores the world of organized crime, loyalty, and the consequences of power.</p>
+                    <p><i class="fas fa-star"></i> 9.2</p>
+                    <button class="more-info">More Info</button>
+                 </div>
+            </div>
+        <div class="movie-card">
+            <img src="images/movie cards/alienrolumus.jfif" alt="">
+            <div class="movie-info">
+            <h3>Alien Romulus</h3>
+            <p class="description">It is thrilling sci-fi adventure that takes viewers to the far reaches of space.<br> Set in a desolate and hostile world.</br></p>
+            <p><i class="fas fa-star"></i> 9.2</p>
+         <button class="more-info">More Info</button>
+            
+        </div>
+    </section>
+    
+    <main class="center-content">
+        <div class="content-container">
+
+            <section class="quote">
+                <h2>Movie Quote of the Day</h2>
+                <p id="quote-text">"The greatest thing you'll ever learn is just to love and be loved in return." – Moulin Rouge</p>
+                <button id="change-quote-btn">Change Quote</button>
+            </section>
+
+            <section class="director">
+                <h2>Director Spotlight: Christopher Nolan</h2>
+                <p>Christopher Nolan is one of the most influential filmmakers of our time, known for his innovative storytelling and breathtaking visuals.</p>
+                <img src="directorphoto/christopher.jfif" alt="Director Photo" class="director-photo">
+            </section>
+
+            <section class="movie-recommendations">
+                <h2>Recommended Movies</h2>
+                <p id="recommended-movie">Click below for a random movie recommendation!</p>
+                <button id="random-movie-btn">Get Recommendation</button>
+            </section>
+        </div>
+    </main>
+
+
+    <section class="reviews">
+        <h2>What People Are Saying</h2>
+        <div class="reviews-cards">
+            <div class="review-card">
+            <img src="reviewcard/johndoe.jfif" alt="">
+                <p>"MovieRecs has completely transformed the way I choose movies.<br> The recommendations are spot-on and the reviews are so helpful!"</br></p>
+                <h3>- John Doe</h3>
+            </div>
+            <div class="review-card">
+                <img src="reviewcard/saralee.jfif" alt="">
+                <p>"I love how easy it is to find movies by genre.<br> The interface is clean, and I always find something I love.</br>"</p>
+                <h3>- Sarah Lee</h3>
+            </div>
+            <div class="review-card">
+                <img src="reviewcard/mikeharris.jfif" alt="">
+                <p>"A fantastic resource for movie lovers!<br> The detailed descriptions and ratings make it easy to decide what to watch next."</br></p>
+                <h3>- Mike Harris</h3>
+            </div>
+        </div>
+    </section>
+
+<section>
+    <div class="modal">
+        <div class="modal-content">
+            <h2>"Your Next Movie Adventure Starts Here!" </h2>
+           <p>Our carefully curated collection of movies offers something for every taste and mood, ensuring that your next cinematic adventure is just a click away.<br> Whether you're a fan of action-packed blockbusters, thrilling mysteries, heartwarming dramas, or side-splitting comedies, our movie cards feature a wide variety of genres that will cater to all your viewing preferences.</br><br> From timeless classics to the latest releases, each movie has been selected to provide an immersive and unforgettable experience.</br> Explore the vibrant world of cinema through our easy-to-navigate interface, where you can find movie recommendations, trailers, and detailed descriptions to help you make the perfect choice for your next movie night.<br> Whether you're watching solo or with friends, we promise you'll find something to enjoy.</br><br> So, grab your popcorn, sit back, and dive into the world of movies that we’ve handpicked just for you.</br><br>Start discovering your next favorite film today!</br>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MovieRecs. All rights reserved.</p>
+        <p>Made with &#10084;&#65039;
+            for movie lovers. Explore your favorite movies, actors, and genres right here at Movie Recs.</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
